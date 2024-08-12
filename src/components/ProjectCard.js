@@ -1,7 +1,7 @@
 export default function ProjectCard ({projectDetail}) {
     return <div className='border-2 border-gray-300 rounded-2xl p-3'>
         <div className='grid grid-row-5 justify-center '>
-            <img className='row-span-3 rounded-2xl w-[400px] h-[350px]' src={projectDetail.img_src}/>
+            <img className='row-span-3 rounded-2xl w-[400px] h-[350px]' src={projectDetail.img_src} alt={projectDetail.title}/>
 
             <div className='row-span-2 flex flex-col gap-3 justify-center'>
                 <h5 className='text-center  font-bold'>{projectDetail.title}</h5>

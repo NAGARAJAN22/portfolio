@@ -32,9 +32,9 @@ export default function ProfileSection() {
                 </a>
             </div>
             <div className='flex flex-row gap-2'>
-                <a target='_blank' href='https://www.linkedin.com/in/nagarajan-s-727014234/'><FaLinkedin
+                <a target='_blank' href='https://www.linkedin.com/in/nagarajan-s-727014234/' rel="noopener noreferrer"><FaLinkedin
                     className='rounded-full text-3xl hover:scale-105'/></a>
-                <a target='_blank' href='https://github.com/NAGARAJAN22'><FaGithub
+                <a target='_blank' href='https://github.com/NAGARAJAN22' rel="noopener noreferrer"><FaGithub
                     className='rounded-full text-3xl hover:scale-105'/></a>
             </div>
         </div>
