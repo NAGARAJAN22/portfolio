@@ -1,4 +1,4 @@
-import SectionDetail from "./SectionDetail";
+import SectionDetail from "../components/SectionDetail";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaLinkedin } from "react-icons/fa6";
 
@@ -7,9 +7,12 @@ export default function ContactSection() {
         <div id='contact' className='mt-60'>
             <SectionDetail sectionDetail={{title: 'Contact Me', caption: 'Get In Touch'}}/>
             <div className='flex justify-center'>
-                <div className='border-2 rounded-3xl border-gray-300 flex flex-row gap-3 p-7 lg:px-12 group hover:bg-gray-700'>
+                <div className='border-2 rounded-3xl border-gray-300 flex flex-row gap-3 gap-x-8 p-7 lg:px-12 group hover:bg-gray-700'>
                     <div className='flex flex-row justify-center items-center gap-2 group-hover:bg-gray-700 group-hover:text-white'>
-                        <HiOutlineMailOpen className='text-3xl'/>nagarajan2002s@gmail.com
+                        <HiOutlineMailOpen className='text-3xl'/>
+                        <a href="mailto:nagarajan2002s@gmail.com" className='hover:underline'>
+                            nagarajan2002s@gmail.com
+                        </a>
                     </div>
                     <div className='flex flex-row justify-center items-center gap-2 group-hover:text-white group-hover:scale-110'>
                         <FaLinkedin className='text-3xl'/><a href='https://www.linkedin.com/in/nagarajan-s-727014234/' target='_blank'>LinkedIn</a>
@@ -17,7 +20,7 @@ export default function ContactSection() {
                 </div>
             </div>
 
-            <footer className='m-32'>
+            <footer className='mt-32'>
                 <div className='flex justify-center items-center gap-10 text-xl font-medium menu-item'>
                     <a href='#about'>About</a>
                     <a href='#experience'>Experience</a>

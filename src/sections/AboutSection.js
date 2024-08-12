@@ -1,6 +1,6 @@
 import {PiMedalFill} from "react-icons/pi";
 import {FaSchool} from "react-icons/fa";
-import SectionDetail from "./SectionDetail";
+import SectionDetail from "../components/SectionDetail";
 
 export default function AboutSection() {
     return <div id='about' className='about pt-2'>

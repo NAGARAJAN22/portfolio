@@ -1,5 +1,5 @@
-import SectionDetail from "./SectionDetail";
-import ProjectCard from "./ProjectCard";
+import SectionDetail from "../components/SectionDetail";
+import ProjectCard from "../components/ProjectCard";
 
 export default function ProjectSection() {
     return <div id='project' className='project pt-2'>

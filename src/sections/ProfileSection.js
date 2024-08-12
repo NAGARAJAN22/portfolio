@@ -2,6 +2,13 @@ import {FaLinkedin} from "react-icons/fa6";
 import {FaGithub} from "react-icons/fa";
 
 export default function ProfileSection() {
+    function downloadCv() {
+        const link = document.createElement('a');
+        link.href = '/asset/resume/resume.pdf'; // Replace with the path to your PDF file
+        link.download = 'Nagarajan_CV.pdf'
+        link.click();
+    }
+
     return <div
         className="profile-section xl:px-20 grid grid-cols-1 lg:grid-cols-2 gap-4 items-center justify-center min-h-[65vh]">
         <div className="flex justify-center items-center">
@@ -15,7 +22,8 @@ export default function ProfileSection() {
             <h5><span className='typewriter w-fit text-3xl font-medium'>Full Stack Developer</span></h5>
             <div className='flex flex-row gap-2'>
                 <button id='download-cv'
-                        className='bg-white text-black font-semibold py-2 px-4 border-2 border-black rounded-full hover:scale-105'>Download
+                        className='bg-white text-black font-semibold py-2 px-4 border-2 border-black rounded-full hover:scale-105'
+                        onClick={downloadCv}>Download
                     CV
                 </button>
                 <a href='#contact'

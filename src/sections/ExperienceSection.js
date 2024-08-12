@@ -1,6 +1,6 @@
 import {TiTick} from "react-icons/ti";
 import SkillSection from "./SkillSection";
-import SectionDetail from "./SectionDetail";
+import SectionDetail from "../components/SectionDetail";
 
 export default function ExperienceSection() {
     return <div>

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./navbar/Navbar";
+import ProfileSection from "./sections/ProfileSection";
+import AboutSection from "./sections/AboutSection";
+import ExperienceSection from "./sections/ExperienceSection";
+import ProjectSection from "./sections/ProjectSection";
+import ContactSection from "./sections/ContactSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='App'>
+          <Navbar/>
+          <div className="section xl:px-20 w-full">
+              <ProfileSection/>
+              <AboutSection/>
+              <ExperienceSection/>
+              <ProjectSection/>
+              <ContactSection/>
+          </div>
+      </div>
   );
 }
 
